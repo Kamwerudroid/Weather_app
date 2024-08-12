@@ -88,16 +88,16 @@ function getCityWeather(url) {
     });
 }
 function getWeatherByCoordinates(latitude, longitude) {
-  getCityWeather(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=35b1f1d45a7b4378cf2430ae601816be&units=metric`);
+  getCityWeather(`https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=fb75a31cead1deab33795e78283aace0`);
 }
 function getForecastByCoordinates(latitude, longitude) {
-  getForecast(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&APPID=35b1f1d45a7b4378cf2430ae601816be&units=metric`);
+  getForecast(`https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=fb75a31cead1deab33795e78283aace0`);
 }
 function getWeatherByCity(city) {
-  getCityWeather(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=35b1f1d45a7b4378cf2430ae601816be&units=metric`);
+  getCityWeather(`https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=fb75a31cead1deab33795e78283aace0`);
 }
 function getForecastByCity(city) {
-  getForecast(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=35b1f1d45a7b4378cf2430ae601816be&units=metric`);
+  getForecast(`https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=fb75a31cead1deab33795e78283aace0`);
 }
 
 function geosuccess(position) {
