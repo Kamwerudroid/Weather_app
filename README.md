@@ -1,0 +1,1 @@
+This is a weather app that uses the OpenWeather API to display the five day forecast of weather. There is a geolocator that shows the current location as well as an input window for major cities. The link is https://kamwerudroid.github.io/Weather_app/
